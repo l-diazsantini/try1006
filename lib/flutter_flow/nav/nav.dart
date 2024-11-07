@@ -270,6 +270,72 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               structBuilder: BTDeviceStruct.fromSerializableMap,
             ),
           ),
+        ),
+        FFRoute(
+          name: 'DevicePageCopy',
+          path: '/devicePageCopy',
+          builder: (context, params) => DevicePageCopyWidget(
+            deviceName: params.getParam(
+              'deviceName',
+              ParamType.String,
+            ),
+            deviceId: params.getParam(
+              'deviceId',
+              ParamType.String,
+            ),
+            deviceRssi: params.getParam(
+              'deviceRssi',
+              ParamType.int,
+            ),
+            hasWriteCharacteristic: params.getParam(
+              'hasWriteCharacteristic',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'DevicePageCopy2',
+          path: '/devicePageCopy2',
+          builder: (context, params) => DevicePageCopy2Widget(
+            deviceName: params.getParam(
+              'deviceName',
+              ParamType.String,
+            ),
+            deviceId: params.getParam(
+              'deviceId',
+              ParamType.String,
+            ),
+            deviceRssi: params.getParam(
+              'deviceRssi',
+              ParamType.int,
+            ),
+            hasWriteCharacteristic: params.getParam(
+              'hasWriteCharacteristic',
+              ParamType.bool,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'SquareWave',
+          path: '/squareWave',
+          builder: (context, params) => SquareWaveWidget(
+            deviceName: params.getParam(
+              'deviceName',
+              ParamType.String,
+            ),
+            deviceId: params.getParam(
+              'deviceId',
+              ParamType.String,
+            ),
+            deviceRssi: params.getParam(
+              'deviceRssi',
+              ParamType.int,
+            ),
+            hasWriteCharacteristic: params.getParam(
+              'hasWriteCharacteristic',
+              ParamType.bool,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

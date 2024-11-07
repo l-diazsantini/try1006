@@ -14,3 +14,8 @@ export '/pages/wave_gen/wave_gen_widget.dart' show WaveGenWidget;
 export '/pages/oscilloscope/oscilloscope_widget.dart' show OscilloscopeWidget;
 export '/pages/power_supply/power_supply_widget.dart' show PowerSupplyWidget;
 export '/pages/test/test_widget.dart' show TestWidget;
+export '/pages/device_page_copy/device_page_copy_widget.dart'
+    show DevicePageCopyWidget;
+export '/pages/device_page_copy2/device_page_copy2_widget.dart'
+    show DevicePageCopy2Widget;
+export '/pages/square_wave/square_wave_widget.dart' show SquareWaveWidget;
